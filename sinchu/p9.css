@@ -1,0 +1,101 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffd755;
+    margin: 0;
+}
+#fis ,#sec,#t,#fo,#fi,#si,#se,#ei,#ni{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #ff6347;
+    transform-origin: 50% 50%;
+}
+#fis{
+    background-color: #ffd700;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+}
+#sec{
+    transform: rotate(0deg) translate(100px);
+    z-index: 0;
+}
+#t{
+    transform: rotate(45deg) translate(100px);
+    z-index: 0;
+}
+#fo{
+    transform: rotate(90deg) translate(100px);
+    z-index: 0;
+}
+#fi{
+    transform: rotate(135deg) translate(100px);
+    z-index: 0;
+}
+#si{
+    transform: rotate(180deg) translate(100px);
+    z-index: 0;
+}
+#se{
+    transform: rotate(225deg) translate(100px);
+    z-index:  0;
+}
+#ei{
+    transform: rotate(280deg) translate(100px);
+    z-index: 0;
+}
+#ni{
+    transform: rotate(325deg) translate(100px);
+    z-index: 0;
+}
+#fis,#sec,#t,#fo,#fi{
+    background-color: red;
+    border-radius: 50%;
+    height:100vh;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 50px;
+    border-radius: 50%;
+    animation: 4s alternate 0s infiniteflower;
+}
+@keyframes flower{
+    from{
+        transform:translateY(10vh);
+        background-color: yellow;
+    }
+    to{
+        transform: translateY(0);
+        background-color: orangered;
+    }
+
+}
+#fis{
+    right: -300px;
+}
+#sec{
+    top: -50px;
+    right: -20px;
+}
+#t{
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    right: -31px;
+    top: -200px;
+    z-index: 3;
+}
+#fo{
+    right: -31px;
+    top: -250px;
+    z-index: 3;
+
+}
+#fi{
+    right: -31px;
+    top: -530px;
+
+}

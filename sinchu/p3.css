@@ -1,0 +1,23 @@
+:root{
+    overflow:hidden;
+    background-color:lightblue;
+    display:flex;
+    justify-content: center;
+}
+.sun{
+    background-color: red;
+    border-radius: 50%;
+    height:100vh;
+    aspect-ratio: 1/1;
+    animation:5s linear 0s infinite alternate sun-rise;
+}
+@keyframes sun-rise{
+    from{
+        transform:translateY(110vh);
+        background-color: yellow;
+    }
+    to{
+        transform: translateY(0);
+        background-color: orangered;
+    }
+}

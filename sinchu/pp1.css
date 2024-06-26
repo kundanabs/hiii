@@ -1,0 +1,27 @@
+:root{
+    overflow:hidden;
+    background-color:lightblue;
+    display:flex;
+    justify-content: center;
+}
+.book{
+    background-color: red;
+    border-radius: 50%;
+    height:10px;
+    aspect-ratio: 2/2;
+    animation:3s ease-in 1s 2 reverse both paused slidein;
+    animation-iteration-count: infinite;
+    direction: left;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+@keyframes book{
+    from{
+        transform:translateY(100px);
+        background-color: yellow;
+    }
+    to{
+        transform: translateY(0);
+        background-color: orangered;
+    }
+}
